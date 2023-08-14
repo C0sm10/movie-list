@@ -1,0 +1,67 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "name": "Puss in Boots: The Last Wish",
+      "overview": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left.",
+      "rating": 83,
+      "imageURL": "kuf6dutpsT0vSVehic3EZIqkOBt"
+    },
+    {
+      "id": 2,
+      "name": "Spirited Away",
+      "overview": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
+      "rating": 85,
+      "imageURL": "39wmItIWsg5sZMyRUHLkWBcuVCM"
+    },
+    {
+      "id": 3,
+      "name": "The Dark Knight",
+      "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets.",
+      "rating": 85,
+      "imageURL": "qJ2tW6WMUDux911r6m7haRef0WH"
+    },
+    {
+      "id": 4,
+      "name": "GoodFellas",
+      "overview": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway",
+      "rating": 85,
+      "imageURL": "aKuFiU82s5ISJpGZp7YkIr3kCUd"
+    },
+    {
+      "id": 5,
+      "name": "Life Is Beautiful ",
+      "overview": "A touching story of an Italian book seller of Jewish ancestry who lives in his own little fairy tale.",
+      "rating": 85,
+      "imageURL": "mfnkSeeVOBVheuyn2lo4tfmOPQb"
+    },
+    {
+      "id": 6,
+      "name": "Pulp Fiction",
+      "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper.",
+      "rating": 85,
+      "imageURL": "d5iIlFn5s0ImszYzBPb8JPIfbXD"
+    },
+    {
+      "id": 7,
+      "name": "The Shawshank Redemption ",
+      "overview": "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden.",
+      "rating": 87,
+      "imageURL": "lyQBXzOQSuE59IsHyhrp0qIiPAz"
+    },
+    {
+      "id": 8,
+      "name": "The Lord of the Rings: The Return of the King",
+      "overview": "Aragorn is revealed as the heir to the ancient kings as he, Gandalf and the other members of the broken fellowship struggle to save Gondor from Sauron's forces.",
+      "rating": 85,
+      "imageURL": "rCzpDGLbOoPwLjy3OAm5NUPOTrC"
+    },
+    {
+      "id": 9,
+      "name": "The Hobbit: The Battle of the Five Armies",
+      "overview": "Immediately after the events of The Desolation of Smaug, Bilbo and the dwarves try to defend Erebor's mountain of treasure from others who claim it: the men of the ruined Laketown and the elves of Mirkwood.",
+      "rating": 73,
+      "imageURL": "xT98tLqatZPQApyRmlPL12LtiWp"
+    }
+  ]
+}

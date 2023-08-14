@@ -1,26 +1,58 @@
 import React from "react";
 import List from "./List";
 import Search from "./Search";
-import { movies } from "./db";
+import axios from "axios";
 import "bootstrap/dist/css/bootstrap.css";
 
 class App extends React.Component {
-  state = { movies, query: "" };
+  state = { movies: [], query: "" };
   // Update State method
 
-  deleteMovie = (movie) => {
+  /* ---fetch Method in two steps 
+  async componentDidMount() {
+    const baseURL = "http://localhost:3002/movies";
+    const response = await fetch(baseURL);
+    const data = await response.json();
+    this.setState({ movies: data });
+  } */
+
+  async componentDidMount() {
+    const response = await axios.get("http://localhost:3002/movies");
+    this.setState({ movies: response.data });
+  }
+
+  /* first method 
+   deleteMovie = (movie) => {
     const newMovieList = this.state.movies.filter((m) => m.id !== movie.id);
-    this.setState((state) => ({
+    this.setState(() => ({
+      movies: newMovieList,
+    }));
+  }; */
+
+  /* Delete with Fetch method
+  deleteMovie = async (movie) => {
+    const baseURL = `http://localhost:3002/movies/${movie.id}`;
+    await fetch(baseURL, {
+      method: "DELETE",
+    });
+    const newMovieList = this.state.movies.filter((m) => m.id !== movie.id);
+    this.setState(() => ({
+      movies: newMovieList,
+    }));
+  }; */
+  // Delete with Axios method
+
+  deleteMovie = async (movie) => {
+    axios.delete(`http://localhost:3002/movies/${movie.id}`);
+    const newMovieList = this.state.movies.filter((m) => m.id !== movie.id);
+    this.setState(() => ({
       movies: newMovieList,
     }));
   };
+
   seaMovie = (event) => {
-    // console.log(event.target.value);
     this.setState({ query: event.target.value });
   };
-  /* this.setState({ // Change method Used if the array is empty.
-    movies: newMovieList
-  })*/
 
   render() {
     let filteredMov = this.state.movies.filter((movie) => {

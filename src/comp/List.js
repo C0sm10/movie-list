@@ -7,7 +7,11 @@ const List = (props) => {
         <div className="col-lg-4" key={movie.id}>
           <div className="card mb-4 shadow-sm">
             <img
-              src={movie.imageId}
+              src={
+                "https://image.tmdb.org/t/p/w300_and_h450_bestv2/" +
+                movie.imageURL +
+                ".jpg"
+              }
               className="card-img-top"
               alt={movie.name}
             />
