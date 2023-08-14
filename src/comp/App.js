@@ -17,8 +17,10 @@ class App extends React.Component {
   } */
 
   async componentDidMount() {
-    const response = await axios.get("http://localhost:3002/movies");
-    this.setState({ movies: response.data });
+    const response = await axios.get(
+      `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_TMDB_KEY}`
+    );
+    this.setState({ movies: response.data.results });
   }
 
   /* first method 
@@ -57,7 +59,7 @@ class App extends React.Component {
   render() {
     let filteredMov = this.state.movies.filter((movie) => {
       return (
-        movie.name.toLowerCase().indexOf(this.state.query.toLowerCase()) !== -1
+        movie.title.toLowerCase().indexOf(this.state.query.toLowerCase()) !== -1
       );
     });
 

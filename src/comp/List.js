@@ -7,16 +7,12 @@ const List = (props) => {
         <div className="col-lg-4" key={movie.id}>
           <div className="card mb-4 shadow-sm">
             <img
-              src={
-                "https://image.tmdb.org/t/p/w300_and_h450_bestv2/" +
-                movie.imageURL +
-                ".jpg"
-              }
+              src={`https://image.tmdb.org/t/p/w600_and_h900_bestv2${movie.poster_path}`}
               className="card-img-top"
-              alt={movie.name}
+              alt={movie.title}
             />
             <div className="card-body">
-              <h5 className="card-title">{movie.name}</h5>
+              <h5 className="card-title">{movie.title}</h5>
               <p className="card-text">{movie.overview}</p>
               <div className="d-flex justify-content-between align-items-center">
                 <button
@@ -27,7 +23,9 @@ const List = (props) => {
                   Delete
                 </button>
                 <h2>
-                  <span className="badge bg-secondary">{movie.rating}</span>
+                  <span className="badge bg-secondary">
+                    {movie.vote_average}
+                  </span>
                 </h2>
               </div>
             </div>
